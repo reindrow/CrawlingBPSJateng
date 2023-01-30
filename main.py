@@ -1,7 +1,6 @@
 import streamlit as st
 import snscrape.modules.twitter as sntwitter
 import pandas as pd
-import instaloader
 from PIL import Image
 from googleapiclient.discovery import build
 
