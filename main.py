@@ -60,7 +60,7 @@ elif option=='Crawling YouTube':
     st.write("""# Crawling Komentar YouTube""")
     video_id=st.text_input("Masukan ID link YouTube ") #5tucmKjOGi8
     st.info('Link vidio : https://www.youtube.com/watch?v=dQw4w9WgXcQ. ID link :blue[dQw4w9WgXcQ] ', icon="ℹ️")
-    namayt=st.text_input("Download dengan judul: ") 
+    namayt=st.text_input("Download dengan nama file: ") 
     hasil=st.button("Download")
 
     if hasil:
