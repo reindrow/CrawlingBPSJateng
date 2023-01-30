@@ -27,7 +27,7 @@ elif option == 'Crawling Twitter':
     st.write("""# Crawling Data Twitter""")
     crawling=st.text_input("Masukan nama atau judul data yang ingin dicrawling")
     number = st.text_input ('Jumlah data yang ingin dicrawling')
-    namafile=st.text_input("Download dengan judul: ") 
+    namatwt=st.text_input("Download dengan judul: ") 
     hasil=st.button("Cari")
     
     if hasil:
@@ -52,7 +52,7 @@ elif option == 'Crawling Twitter':
         df = pd.DataFrame (tweets, columns = ['permalink', 'pubdate', 'username', 'text'])
         print(df)
         st.success("Berhasil. Silahkan download file anda di bawah ")
-        st.download_button("Download .csv", df.to_csv(),file_name= namafile+'.csv',mime = 'text/csv')
+        st.download_button("Download .csv", df.to_csv(),file_name= namatwt+'.csv',mime = 'text/csv')
 
 elif option=='Crawling YouTube':
     image = Image.open('LogoBPSFix.png')
@@ -60,8 +60,8 @@ elif option=='Crawling YouTube':
     st.write("""# Crawling Komentar YouTube""")
     video_id=st.text_input("Masukan ID link YouTube ") #5tucmKjOGi8
     st.info('Link vidio : https://www.youtube.com/watch?v=dQw4w9WgXcQ. ID link :blue[dQw4w9WgXcQ] ', icon="ℹ️")
-    namafile=st.text_input("Download dengan judul: ") 
-    hasil=st.button("Cari")
+    namayt=st.text_input("Download dengan judul: ") 
+    hasil=st.button("Download")
 
     if hasil:
 	    def video_comments(video_id):
@@ -104,7 +104,7 @@ elif option=='Crawling YouTube':
 	    print(df)
 
 	    st.success("Berhasil. Silahkan download file anda di bawah ") 
-	    st.download_button("Download .csv", df.to_csv(),file_name= namafile+'.csv',mime = 'text/csv')
+	    st.download_button("Download .csv", df.to_csv(),file_name= namayt+'.csv',mime = 'text/csv')
 
 elif option == 'Profil BPS Jateng':
     image = Image.open('LogoBPSFix.png')
