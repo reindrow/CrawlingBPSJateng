@@ -5,6 +5,10 @@ from PIL import Image
 from googleapiclient.discovery import build
 
 st.markdown("""<hr style="height:1px;border:none;color:#333;background-color:#333;"/>""",unsafe_allow_html=True)
+st.markdown(
+    "<p style='text-align: center;'><b><a href='https://jateng.bps.go.id/'>'BPS Jateng</a></b> </p>",
+    unsafe_allow_html=True
+)
 
 option = st.sidebar.selectbox(
     "Menu📋",
