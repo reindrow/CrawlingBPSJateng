@@ -5,11 +5,7 @@ from PIL import Image
 from googleapiclient.discovery import build
 
 st.markdown("""<hr style="height:1px;border:none;color:#333;background-color:#333;"/>""",unsafe_allow_html=True)
-st.markdown(
-    "<p style='text-align: center;'>Made by <b><a href='https://www.instagram.com/reindrowen24/?hl=id'>'Reindrow Owen</a></b> </p>",
-    unsafe_allow_html=True
 )
-
 option = st.sidebar.selectbox(
     "Menu📋",
     ("Halaman Utama🏠", "Crawling Twitter🟦","Crawling YouTube🟥", "Profil BPS Jateng👤")
@@ -27,7 +23,7 @@ elif option == 'Crawling Twitter🟦':
     st.write("""# Crawling Data Twitter""")
     crawling=st.text_input("Masukan nama atau judul data yang ingin dicrawling")
     number = st.text_input ('Jumlah data yang ingin dicrawling')
-    namatwt=st.text_input("Download dengan judul: ") 
+    namatwt=st.text_input("Download dengan nama file: ") 
     hasil=st.button("Cari🔍")
     
     if hasil:
@@ -60,7 +56,7 @@ elif option=='Crawling YouTube🟥':
     st.write("""# Crawling Komentar YouTube""")
     video_id=st.text_input("Masukan ID link YouTube: ") #5tucmKjOGi8
     st.info('Link vidio : https://www.youtube.com/watch?v=dQw4w9WgXcQ. ID link :blue[dQw4w9WgXcQ] ', icon="💡")
-    namayt=st.text_input("Download dengan judul: ") 
+    namayt=st.text_input("Download dengan nama file: ") 
     hasil=st.button("Cari🔍")
 
     if hasil:
