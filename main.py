@@ -10,7 +10,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-option = st.sidebar.selectbox(
+option = st.sidebar.radio(
     "Menu📋",
     ("Halaman Utama🏠", "Crawling Twitter🟦","Crawling YouTube🟥", "Profil BPS Jateng👤")
 )
