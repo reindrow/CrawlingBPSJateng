@@ -5,7 +5,7 @@ from PIL import Image
 from googleapiclient.discovery import build
 
 st.markdown("""<hr style="height:1px;border:none;color:#333;background-color:#333;"/>""",unsafe_allow_html=True)
-)
+
 option = st.sidebar.selectbox(
     "Menu📋",
     ("Halaman Utama🏠", "Crawling Twitter🟦","Crawling YouTube🟥", "Profil BPS Jateng👤")
