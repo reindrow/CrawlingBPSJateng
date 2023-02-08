@@ -4,6 +4,9 @@ import pandas as pd
 from PIL import Image
 from googleapiclient.discovery import build
 
+PAGE_CONFIG = {"page_title":"CrawlingBPSJateng","page_icon":"LogoBPS1.png","layout":"centered"}
+st.set_page_config(**PAGE_CONFIG)
+
 st.markdown("""<hr style="height:1px;border:none;color:#333;background-color:#333;"/>""",unsafe_allow_html=True)
 st.markdown(
     "<p style='text-align: center;'>Kunjungi Kami <b><a href='https://jateng.bps.go.id/'>BPS Jateng </p>",
