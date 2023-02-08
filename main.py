@@ -21,7 +21,7 @@ option = st.sidebar.selectbox(
 if option == 'Halaman Utama🏠' or option == '':
     image = Image.open('LogoBPSFix.png')
     st.image(image)
-    image = Image.open('bps jateng 2.jpg')
+    image = Image.open('gambar bangunan bps jateng.png')
     st.image(image)
 
 elif option == 'Crawling Twitter🟦':
